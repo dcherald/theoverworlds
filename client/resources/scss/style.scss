@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Macondo+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Eczar&display=swap');
+@import "~bootstrap/scss/bootstrap";
+
+:root {
+    --darkbrown: rgba(77, 40, 0, 1);
+    --artifactsColor: rgba(191, 64, 128, 1);
+    --creaturesColor: rgba(102, 153, 0, 1);
+    --magicksColor: rgba(0, 153, 255, 1);
+    --monstersColor: rgba(153, 0, 0, 1);
+    --peopleColor: rgba(255, 153, 102, 1);
+    --placesColor: rgba(255, 102, 153, 1);
+    --religionColor: rgba(255, 204, 102, 1);
+    --talesColor: rgba(0, 204, 153, 1);
+}
+body, html {
+    height: 100%;
+    //background-color: rgba(0,0,0,.018);
+    background-color: wheat;
+    color: rgba(0,0,0,.75);
+    font-family: 'Helvetica';
+    //temporary bg image
+    background-image: url("https://raw.githubusercontent.com/dcherald/theoverworlds/master/paper-bg-lightbrown.png");
+}
+
+.fantasy-title-container {
+    //background-image: url("https://raw.githubusercontent.com/dcherald/theoverworlds/master/30658-Name%20banner%202.png");
+    font-family: 'Macondo Swash Caps', cursive;
+}
+.fantasy-title-image{
+    width: 100%;
+}
+.fantasy-title-text{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.fantasy-form{
+    background-color: ivory;
+    color: var(--darkbrown);
+}
+
+.fantasy-sort {
+    background-color: ivory;
+    color: var(--darkbrown);
+    width: 30%;
+}
+
+.fantasy-blog-article {
+    border: 1px solid saddlebrown;
+    box-shadow: 3px 4px 5px rgba(0,0,0,.60);
+}
+
+.fantasy-blog-header {
+    background-color: peru;
+    color: var(--darkbrown);
+    font-family: 'Macondo Swash Caps', cursive;
+    font-size: 1.3em;
+}
+
+.fantasy-blog-body {
+    background-color: ivory;
+    color: var(--darkbrown);
+    font-family: 'Eczar', serif;
+    font-weight: 500;
+    font-size: 1.1em;
+    //background-image: url("https://raw.githubusercontent.com/dcherald/theoverworlds/master/30599-Land%20background%201.jpg");
+}
+
+.fantasy-blog-footer {
+    background-color: burlywood;
+}
+
+.btn-fantasy-primary {
+    background-color: rgb(0, 102, 0); 
+    color: ivory;
+}
+.btn-fantasy-primary:hover {
+    background-color: rgb(0, 77, 0);
+    color: ivory;
+}
+
+.btn-fantasy-danger {
+    background-color: rgb(153, 0, 0);
+    color: ivory;
+}
+.btn-fantasy-danger:hover {
+    background-color: rgb(128, 0, 0);
+    color: ivory;
+}
+
+.btn-fantasy-readmore {
+    background-color: burlywood;
+}
+.btn-fantasy-readmore:hover {
+    background-color: #b5966e;
+}
+
+.fantasy-blog-category{
+    color: white;
+}
+.fantasy-blog-category-indicator{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid saddlebrown;
+    margin: 5px;
+}
+
+.fantasy-category-all{
+    background-color: saddlebrown;
+}
+.fantasy-category-artifacts{
+    background-color: var(--artifactsColor);
+}
+.fantasy-category-creatures{
+    background-color: var(--creaturesColor);
+}
+.fantasy-category-magicks {
+    background-color: var(--magicksColor);
+}
+.fantasy-category-monsters{
+    background-color: var(--monstersColor);
+}
+.fantasy-category-places {
+    background-color: var(--placesColor);
+}
+.fantasy-category-people {
+    background-color: var(--peopleColor);
+}
+.fantasy-category-religion {
+    background-color: var(--religionColor);
+}
+.fantasy-category-tales {
+    background-color: var(--talesColor);
+}
+
+.btn-fantasy-category {
+    font-family: 'Macondo Swash Caps', cursive;
+    transition: filter .3s, color .3s, width .3s, margin .3s;
+    color: ivory;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    width: 12.5%;
+    margin: .75%;
+    border: 1px solid saddlebrown;
+    box-shadow: 2px 3px 4px rgba(0,0,0,.60);
+}
+.btn-fantasy-category:hover{
+    filter: brightness(75%);
+    color: ivory;
+    width: 14%;
+    margin-right: 0%;
+    margin-left: 0%;
+}
+.btn-fantasy-category-selected{
+    border: 2px solid ivory;
+    filter: brightness(115%);
+}
+
